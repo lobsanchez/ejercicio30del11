@@ -21,14 +21,7 @@
 <body>
      <?php include("assets/templates/header.php"); ?>
      <main>
-          <section class="section-1">
-               <div>
-                    <h1>Monitor your business on real-time dashboard</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. </p>
-                    <button class="pink">Try for free</button>
-               </div>
-               <img src="assets\images\main-screenDoble.svg" alt="">
-          </section>
+          
           <section class="section-1">
                <h2>Main Features</h2>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet. Id vel in nam malesuada.</p>
