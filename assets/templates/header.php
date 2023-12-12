@@ -17,16 +17,17 @@
         <button class="border">Sign Up</button>
     </div>
     
-    <section class="section-1">
-        <div>
-            <h1>Monitor your business on real-time dashboard</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. </p>
-            <button class="pink">Try for free</button>
-        </div>
-        <div class="img-hero">
-            <img src="assets\images\main-screenDoble.svg" alt="Imagen doble">
-        </div>
-    </section>
+    <!-- <section class="section-1"> -->
+    
+    <div class="title-hero">
+        <h1>Monitor your business on real-time dashboard</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. </p>
+        <button class="pink">Try for free</button>
+    </div>
+    <div class="img-hero">
+        <img src="assets\images\main-screenDoble.svg" alt="Imagen doble">
+    </div>
+    <!-- </section> -->
 
 </header>
 

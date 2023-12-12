@@ -3,6 +3,68 @@ header {
     background-color:$color-background;
     color:$color-text-secondary;
     display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 140px 618px;
+    align-items: center;
+    .logo{
+        grid-column-start:2;
+        grid-column-end: 3;
+    }
+    nav{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        ul{
+            display:flex;
+            justify-content: left;
+            list-style: none;
+            padding-left: 50px;
+            li {
+                padding-right: 50px;
+                &:hover{
+                    color:$color-background-body;  
+                }
+            }
+        }
+    }
+    .nav-right{
+        grid-column-start:5;
+        grid-column-end: 9;
+        justify-content: center;
+        display: flex;
+        button{
+            padding-right: 40px;
+            display: inline-flex;
+            height: 40px;
+            padding: 10px 53px;
+            align-items: center;
+            /* Esto no funciona y no se por qué
+            button.border {
+                border-radius: 68px;
+                border: 1px solid $color-border;
+            }
+            */
+        }
+        button.border {
+            border-radius: 68px;
+            border: 1px solid $color-border;
+        }
+    }   
    
-    
+    .title-hero {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        padding:0 30px;
+        h1{
+            font-size:$titulo-h1;
+            color:$color-text-main;
+        }
+        p{
+            font-size:$parrafo;
+            color:$color-text-secondary;
+        }
+    }
+    .img-hero{
+        grid-column-start: 5;
+        grid-column-end: 8;
+    }
 }
