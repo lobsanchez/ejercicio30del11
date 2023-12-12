@@ -7,26 +7,23 @@
         <div class="prices">
             <div class="starter">
                 <h3>Starter</h3>
-                <span>up to 3 users</span>
-                <div class="precio">
-                    $29<span>per month</span>
-                </div>
+                <p>up to 3 users</p>
+                <div class="precio">$29</div>
+                <p>per month</p>
                 <button>Order</button>
             </div>
             <div class="standard">
                 <h3>Standard</h3>
-                <span>up to 20 users</span>
-                <div class="precio">
-                    $99<span>per month</span>
-                </div>
+                <p>up to 20 users</p>
+                <div class="precio">$99</div>
+                <p>per month</p>
                 <button class="pink">Order</button>
             </div>
             <div class="premium">
                 <h3>Premium</h3>
-                <span>up to 200 users</span>
-                <div class="precio">
-                    $299<span>per month</span>
-                </div>
+                <p>up to 200 users</p>
+                <div class="precio">$299</div>
+                <p>per month</p>   
                 <button>Order</button>
             </div>
         </div>
