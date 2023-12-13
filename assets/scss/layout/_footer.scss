@@ -1,5 +1,4 @@
 footer{
-    
     section{
         max-width: 1600px;
         background-color:$color-background;
@@ -28,33 +27,34 @@ footer{
             justify-content: center;
             gap: 80px;
             display: flex;
-           
+            padding: 0 316px 196px 316px;
+            border-bottom: 1px solid $color-text-secondary;
             .starter, .standard, .premium {
-                justify-content: center;
                 width: 340px;
                 height: 440px;
                 border-radius: 30px;
                 background-color: $color-background-card;
                 box-shadow: 0px 18px 50px -15px rgba(25,42,89,0.20);
-                padding-bottom: 196px;
+                text-align: center;
+                padding: 0 60px 0 60px;
                 h3{
                     font-size: $subtitulo;
                     font-weight: bold;
                     color:$color-text-main;
-                    padding:50px 124px 10px 122px;
+                    padding:50px 0px 10px 0px;
                 }
                 p{
                     font-size: $parrafo;
-                    padding: 0px 119px 37px 117px;
+                    padding: 0px 0px 37px 0px;
                     &:first-of-type{                      
-                        border-bottom: 1px solid $color-text-secondary;  
+                        border-bottom: 1px solid $color-text-secondary;
                     }
                 }
                 .precio{
                     font-size: $text-price;
                     font-weight: bold;
                     color:$color-text-main;
-                    padding:28px 128px 0px 125px;
+                    padding:28px 0px 0px 0px;
                     &::first-letter{
                         font-size: $subtitulo;
                     }
@@ -67,36 +67,43 @@ footer{
                     p{
                         color:$color-text-secondary;
                     }
+                    button{
+                        background-color:$color-button;
+                        border:0px;
+                    }
                 }
                 button{
-                    justify-content: center;
                     height: 50px;
                     padding: 10px 80px;
                     align-items: center;
                     border-radius: 68px;
                     border:1px solid $color-border-button;
+                } 
+            }
+        }  
+        .logo-footer{
+            grid-column:2 / 3;
+            grid-row: 3 / 4;
+        }
+        ul{
+            grid-column:4 / 6;
+            grid-row: 3 / 4;
+            display:flex;
+            list-style: none;
+            li {
+                padding-right: 40px;
+                &:hover{
+                    color:$color-background-body;  
                 }
             }
-            .standard>h3{
-                padding:50px 108px 10px 109px;
+        }
+        .social{
+            grid-column:7 / 8;
+            grid-row: 3 / 4;
+            text-align: right;
+            a{
+                padding-left: 40px;
             }
-            .standard>p{
-                padding: 0 113px 37px 113px;
-            }
-            .premium>h3{
-                padding:50px 108px 10px 109px;
-            }
-            .premium>p{
-                padding: 0 108px 37px 108px;
-            }
-            .premium>.precio{
-                padding:28px 110px 0px 110px;
-            }
-               
-            
-        }  
-    }
-    .nav-footer{
-        display:grid;
+        }
     }
 }
