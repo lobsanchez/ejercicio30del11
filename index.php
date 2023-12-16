@@ -43,7 +43,7 @@
                     </div>
                </div>
           </section>
-          <section class="section-3">
+          <section class="section-2">
                <div class="texto">
                     <h2>Automated Reports & Widget Alerts</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
@@ -57,7 +57,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
                </div>
           </section>
-          <section class="section-3">
+          <section class="section-4">
                <div class="texto">
                     <h2>Pre-built Dashboard Templates</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
