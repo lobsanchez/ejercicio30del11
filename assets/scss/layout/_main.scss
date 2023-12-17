@@ -1,4 +1,52 @@
 main{
-    margin: auto;
-    
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 38px 210px;
+    .section-1{
+        padding-bottom: 130px;
+        text-align: center;
+        h2{          
+            font-weight: 700;
+            font-size: $titulo-h2;
+            padding-bottom: 30px;
+        }
+        p{
+            font-size:$parrafo;
+            color:$color-text-secondary;
+            padding-bottom: 81px;
+        }
+        h3{  
+            font-size: $titulo-h3;
+            color:$color-background;
+            font-weight: 700;
+            padding-bottom: 15px;
+        }
+        img{
+            padding-bottom: 26px;
+        }
+        .cards{
+            display:grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap:20px;
+            div{
+                text-align: center;   
+            }
+        }       
+    }
+    .section-2{
+        padding-bottom: 120px;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap:100px;
+        justify-content: center;
+        h2{          
+            font-weight: 700;
+            font-size: $titulo-h2;
+            padding-bottom: 30px;
+        }
+        p{
+            font-size:$parrafo;
+            color:$color-text-secondary;
+        }
+    }  
 }
