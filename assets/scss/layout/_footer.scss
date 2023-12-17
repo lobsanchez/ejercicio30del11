@@ -2,11 +2,11 @@ footer{
     margin:0 auto;
     max-width: 1600px;
     border-top: 17px solid $color-button;
-    background: url(../images/background-footer.png) right center no-repeat $color-background;
+   
 
     section{
         max-width: 1600px;
-        background-color:$color-background;
+        background: url(../images/background-footer.png) right bottom no-repeat $color-background;
         color:$color-text-secondary;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
