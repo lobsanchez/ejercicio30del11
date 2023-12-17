@@ -2,10 +2,8 @@ header {
     margin: 0 auto;
     max-width: 1600px;
     color:$color-text-secondary;
-    /* background-color:$color-background; */
-    /* Si analizo con las devtools en el navegador me dice que no ha podido cargar las imágenes de fondo y no se por qué m,otivo */
-    
-    background: url(/assets/images/background-header-left.png) left top no-repeat, url(/assets/images/background-header-right.png) right center no-repeat $color-background;
+    /* Si analizo con las devtools en el navegador me dice que no ha podido cargar las imágenes de fondo y no se por qué motivo. Me ayuda Alex y el problema era la ruta. */  
+    background: url(../images/background-header-left.png) left top no-repeat, url(../images/background-header-right.png) right center no-repeat $color-background;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 140px 618px;
@@ -72,4 +70,5 @@ header {
         grid-column-start: 5;
         grid-column-end: 8;
     }
+    
 }
