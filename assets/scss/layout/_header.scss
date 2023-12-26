@@ -1,74 +1,145 @@
 header {
     margin: 0 auto;
-    max-width: 1600px;
-    color:$color-text-secondary;
-    /* Si analizo con las devtools en el navegador me dice que no ha podido cargar las imágenes de fondo y no se por qué motivo. Me ayuda Alex y el problema era la ruta. */  
-    background: url(../images/background-header-left.png) left top no-repeat, url(../images/background-header-right.png) right center no-repeat $color-background;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 140px 618px;
     align-items: center;
     border-bottom: 17px solid $color-button;
-    .logo{
-        grid-column-start:2;
-        grid-column-end: 3;
-    }
-    nav{
-        grid-column-start: 3;
-        grid-column-end: 5;
-        ul{
-            display:flex;
-            justify-content: left;
-            list-style: none;
-            padding-left: 40px;
-            li {
-                padding-right: 50px;
-                &:hover{
-                    color:$color-background-body;  
+    color:$color-text-secondary;
+    background: url(../images/background-header-left.png) left top no-repeat, url(../images/background-header-right.png) right center no-repeat $color-background;
+    /* De momento dejo las mismas reglas css para desktop y tablet */
+    /* Reglas para desktop > 1024px y tablet < 768px & < 1024px */
+    @media screen and (min-width: 768px) and (max-width:1600px){
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 140px 618px;
+        max-width: 1600px;
+        .logo{
+            grid-column-start:2;
+            grid-column-end: 3;
+        }
+        nav{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            ul{
+                display:flex;
+                justify-content: left;
+                list-style: none;
+                padding-left: 40px;
+                li {
+                    padding-right: 5%;
+                    &:hover{
+                        color:$color-background-body;  
+                    }
                 }
             }
         }
-    }
-    .nav-right{
-        grid-column-start:5;
-        grid-column-end: 9;
-        justify-content: center;
-        display: flex;
-        button{
-            padding-right: 40px;
-            display: inline-flex;
-            height: 40px;
-            padding: 10px 53px;
-            align-items: center;
-            /* Esto no funciona y no se por qué
+        .nav-right{
+            grid-column-start:5;
+            grid-column-end: 9;
+            justify-content: center;
+            display: flex;
+            button{
+                padding-right: 40px;
+                display: inline-flex;
+                height: 40px;
+                padding: 10px 10%;
+                align-items: center;
+                /* Esto no funciona y no se por qué
+                button.border {
+                    border-radius: 68px;
+                    border: 1px solid $color-border;
+                }
+                */
+            }
             button.border {
                 border-radius: 68px;
                 border: 1px solid $color-border;
             }
-            */
+        }   
+        .title-hero {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            padding:0 30px;
+            h1{
+                font-size:$titulo-h1;
+                color:$color-text-main;
+            }
+            p{
+                font-size:$parrafo;
+                color:$color-text-secondary;
+            }
         }
-        button.border {
-            border-radius: 68px;
-            border: 1px solid $color-border;
-        }
-    }   
-   
-    .title-hero {
-        grid-column-start: 2;
-        grid-column-end: 5;
-        padding:0 30px;
-        h1{
-            font-size:$titulo-h1;
-            color:$color-text-main;
-        }
-        p{
-            font-size:$parrafo;
-            color:$color-text-secondary;
+        .img-hero{
+            grid-column-start: 5;
+            grid-column-end: 9;
         }
     }
-    .img-hero{
-        grid-column-start: 5;
-        grid-column-end: 8;
-    }
-    
+
+     /*Reglas para smartphone < 768px */
+     @media screen and (max-width: 767px){
+        display: grid;
+        grid-template-columns: repeat( 1, 1fr);
+        grid-template-rows: 140px 618px;
+        max-width: 767px;
+        .logo{
+            grid-column-start:2;
+            grid-column-end: 3;
+        }
+        nav{
+            display:none;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            ul{
+                display:flex;
+                justify-content: left;
+                list-style: none;
+                padding-left: 20px;
+                li {
+                    padding-right: 5%;
+                    &:hover{
+                        color:$color-background-body;  
+                    }
+                }
+            }
+        }
+        .nav-right{
+            grid-column-start:5;
+            grid-column-end: 9;
+            justify-content: center;
+            display: flex;
+            button{
+                padding-right: 20px;
+                display: inline-flex;
+                height: 20px;
+                padding: 10px 10%;
+                align-items: center;
+                /* Esto no funciona y no se por qué
+                button.border {
+                    border-radius: 68px;
+                    border: 1px solid $color-border;
+                }
+                */
+            }
+            button.border {
+                border-radius: 68px;
+                border: 1px solid $color-border;
+            }
+        }   
+        .title-hero {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            padding:0 15px;
+            h1{
+                font-size:$titulo-h1;
+                color:$color-text-main;
+            }
+            p{
+                font-size:$parrafo;
+                color:$color-text-secondary;
+            }
+        }
+        .img-hero{
+            grid-column-start: 5;
+            grid-column-end: 9;
+        }
+
+     }
 }
